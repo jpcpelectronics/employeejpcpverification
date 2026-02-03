@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Verification | JPCP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="logojpcpin.png" alt="JPCP Logo" class="logo">
+            <h1>Employee Verification Portal</h1>
+            <p>Enter details below to verify employee credentials.</p>
+        </header>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="ID, Name, or Mobile Number...">
+            <button onclick="verifyEmployee()">Verify Now</button>
+        </div>
+
+        <div id="resultCard" class="result-card" style="display: none;">
+            <h3>Verification Successful</h3>
+            <hr>
+            <div class="info-grid">
+                <div class="info-item"><strong>Name:</strong> <span id="resName"></span></div>
+                <div class="info-item"><strong>Designation:</strong> <span id="resDesig"></span></div>
+                <div class="info-item"><strong>Location:</strong> <span id="resLoc"></span></div>
+                <div class="info-item"><strong>Manager:</strong> <span id="resManager"></span></div>
+            </div>
+            <button class="btn-clear" onclick="resetForm()">Clear</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
