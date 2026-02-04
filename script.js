@@ -48,7 +48,6 @@ function verifyEmployee() {
         document.getElementById('resName').innerText = employee.name;
         document.getElementById('resDesig').innerText = employee.designation;
         document.getElementById('resLoc').innerText = employee.location;
-        document.getElementById('resManager').innerText = employee.manager;
         card.style.display = "block";
     } else {
         alert("Employee not found! Please try next time.");
@@ -70,4 +69,5 @@ function resetForm() {
     document.getElementById('resDesig').innerText = "";
     document.getElementById('resLoc').innerText = "";
     document.getElementById('resManager').innerText = "";
+
 }
