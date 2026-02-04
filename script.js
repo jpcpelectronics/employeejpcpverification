@@ -50,7 +50,7 @@ function verifyEmployee() {
         document.getElementById('resLoc').innerText = employee.location;
         card.style.display = "block";
     } else {
-        alert("Employee not found! Please try next time.");
+        alert("Employee not found! please connect with senior authority.");
         card.style.display = "none";
     }
 }
@@ -71,3 +71,4 @@ function resetForm() {
     document.getElementById('resManager').innerText = "";
 
 }
+
